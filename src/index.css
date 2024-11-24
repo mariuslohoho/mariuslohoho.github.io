@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  .reactgooglegraph > div > div > div > svg > rect {
+    @apply fill-gray-700;
+  }
+
+  .reactgooglegraph > div > div > div > svg text {
+    @apply fill-gray-50 font-mono font-[500];
+  }
+  .reactgooglegraph
+    > div
+    > div
+    > div
+    > svg
+    > g
+    > g.google-visualization-tooltip
+    text {
+    @apply fill-black;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y proximity;
+}
+
+section {
+  scroll-snap-align: start;
+}
