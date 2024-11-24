@@ -19,7 +19,7 @@ export default function Portfolio() {
             <h1 className="text-5xl font-bold mb-4 animate-pulse">
               Marius Lo
             </h1>
-            <p className="text-xl mb-8">Full Stack Developer</p>
+            <p className="text-xl mb-8">Computer Science Student</p>
             <div className="flex justify-center space-x-4">
               <a
                 href="https://github.com/mariuslohoho"
