@@ -20,6 +20,16 @@
     text {
     @apply fill-black;
   }
+
+  .ribbon {
+    @apply w-48 text-center;
+  }
+
+  .ribbon,
+  .ribbon:after,
+  .ribbon:before {
+    @apply bg-cyan-800;
+  }
 }
 
 html {
@@ -29,4 +39,14 @@ html {
 
 section {
   scroll-snap-align: start;
+}
+
+.ribbon {
+  margin: 0;
+  color: white;
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translateX(50%) translateY(-175%) rotate(45deg);
+  transform-origin: top left;
 }

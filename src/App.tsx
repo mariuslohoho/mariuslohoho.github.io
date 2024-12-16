@@ -1,9 +1,10 @@
 import { Briefcase, ExternalLink, Github, Link, Mail } from "lucide-react";
 import React from "react";
+import AchievementsPanel from "./components/AchievementsPanel.tsx";
 import Navbar from "./components/Navbar.tsx";
 import Skillcard from "./components/Skillcard.tsx";
 import { SkillsGraph } from "./components/SkillsGraph.tsx";
-import { projects } from "./projects.tsx";
+import { projects } from "./Data/projects.tsx";
 
 export default function Portfolio() {
   return (
@@ -63,8 +64,21 @@ export default function Portfolio() {
         </section>
 
         <section
-          id="projects"
+          id="achievements"
           className="min-h-screen flex items-center justify-center"
+        >
+          <div className="container flex flex-col justify-center mx-auto px-6">
+            <h2 className="text-3xl font-bold mb-8 text-center">
+              Achievements
+            </h2>
+
+            <AchievementsPanel />
+          </div>
+        </section>
+
+        <section
+          id="projects"
+          className="min-h-screen flex items-center justify-center "
         >
           <div className="container mx-auto px-6">
             <h2 className="text-3xl font-bold mb-8 text-center">
